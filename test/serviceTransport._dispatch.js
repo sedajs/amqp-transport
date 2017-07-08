@@ -51,7 +51,6 @@ describe('AMQPServiceTransport#_dispatch()', function() {
     assert.ok(eventHandler.called, 'Handler not called');
     assert.ok(eventHandler.calledOnce, 'Handler called more than once');
     const firstParam = eventHandler.getCall(0).args[1];
-    console.log(eventHandler.getCall(0).args);
     assert.strictEqual(JSON.stringify(firstParam.payload), JSON.stringify(receivedEvent.payload), 'Content differs');
   });
 

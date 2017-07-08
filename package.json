@@ -1,6 +1,6 @@
 {
   "name": "seda-amqp-transport",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "AMQP transport for Seda",
   "main": "lib/index.js",
   "scripts": {
@@ -18,6 +18,7 @@
     "sinon": "^2.1.0"
   },
   "dependencies": {
-    "amqplib": "^0.5.1"
+    "amqplib": "^0.5.1",
+    "debug": "^2.6.8"
   }
 }
